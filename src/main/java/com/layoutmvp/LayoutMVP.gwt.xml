@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.0//EN" "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<module rename-to="layoutMVP">
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <inherits name="com.google.gwt.activity.Activity"/>
+  <inherits name="com.google.gwt.place.Place"/>
+  <inherits name="com.google.gwt.cell.Cell"/>
+  <inherits name="com.google.gwt.editor.Editor"/>
+
+  <inherits name="com.google.gwt.logging.Logging"/>
+  <set-property name="gwt.logging.enabled" value="TRUE"/>
+  <set-property name="gwt.logging.logLevel" value="FINE"/>
+  <set-property name="gwt.logging.consoleHandler" value="DISABLED"/>
+  <set-property name="gwt.logging.developmentModeHandler" value="ENABLED"/>
+  <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED"/>
+  <set-property name="gwt.logging.systemHandler" value="ENABLED"/>
+  <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED"/>
+
+  <entry-point class='com.layoutmvp.client.LayoutMVP'/>
+
+  <replace-with class="com.layoutmvp.client.ClientFactoryImpl">
+    <when-type-is class="com.layoutmvp.client.ClientFactory"/>
+  </replace-with>
+</module>
